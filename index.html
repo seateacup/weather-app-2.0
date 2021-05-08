@@ -10,9 +10,57 @@
   <body>
     <main>
       <section class="glass">
-        <div class="currentWeather">
-          <div class="currentTemp"></div>
-          <div class="maxTemp"></div>
+        <div class="dashboard">
+          <a href="index.html">
+            <img src="./media/logo-orange.png" width="250px" />
+          </a>
+          <button class="currentLocation">Current Location</button>
+          <input type="text" id="city-input" placeholder="Enter city name" />
+          <button class="search">Search</button>
+          <div class="unitConverter">
+            <h3>Unit Converter</h3>
+            <input type="text" id="original-temp" placeholder="0°" />
+            <button class="cToF">to °F</button>
+            <button class="fToC">to °C</button>
+            <h3 id="converted-temp"></h3>
+          </div>
+          <p>
+            <a href="" target="_blank">Open-source code</a> by Cara Thompson
+          </p>
+        </div>
+        <div class="weatherResults">
+          <h1 class="currently">Currently °F in City</h1>
+          <h2 class="date">Date Formatting</h2>
+          <div class="currentWeather">
+            <i></i>
+            <h1 class="temp">°F</h1>
+            <h3 class="description">Description</h3>
+            <h4 class="highLow">High°F / Low°F</h4>
+            <h4 class="windSpeed">Wind Speed MPH</h4>
+            <h4 class="humidity">Humidity%</h4>
+          </div>
+          <div class="forecast">
+            <div class="hourly">
+              <h5 class="twoHours">in 2 hours</h5>
+              <i></i>
+              <h6 class="highLow">High°F / Low°F</h6>
+            </div>
+            <div class="hourly">
+              <h5 class="fourHours">in 4 hours</h5>
+              <i></i>
+              <h6 class="highLow">High°F / Low°F</h6>
+            </div>
+            <div class="hourly">
+              <h5 class="sixHours">in 6 hours</h5>
+              <i></i>
+              <h6 class="highLow">High°F / Low°F</h6>
+            </div>
+            <div class="hourly">
+              <h5 class="eightHours">in 8 hours</h5>
+              <i></i>
+              <h6 class="highLow">High°F / Low°F</h6>
+            </div>
+          </div>
         </div>
       </section>
     </main>
